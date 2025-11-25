@@ -30,26 +30,6 @@ basic.forever(function () {
         led.unplot(3, 3);
     }
 
-
-
-    // Show red color on all RGB pixels.
-    rekabit.setAllRgbPixelsColor(0xff0000)
-    basic.pause(1000)
-
-    // Show different color on each RGB pixels.
-    rekabit.setRgbPixelColor(0, 0xff0000)
-    rekabit.setRgbPixelColor(1, 0x00ff00)
-    basic.pause(1000)
-
-    // Change the brightness to 100% and show rainbow color.
-    rekabit.setRgbBrightness(255)
-    basic.pause(1000)
-
-    // Clear all RGB pixels.
-    rekabit.clearAllRgbPixels()
-
-
-
     // Run Motor 1 forward at 50% speed for 1 second.
     rekabit.runMotor(MotorChannel.M1, MotorDirection.Forward, 127)
     basic.pause(1000)
