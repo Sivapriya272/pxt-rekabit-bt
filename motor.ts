@@ -172,5 +172,30 @@ namespace rekabit {
             rekabit.i2cWrite(servo, pulseWidth);
         }
     }
+//% block="move backward at speed %speed"
+//% speed.min=0 speed.max=255
+export function backward(speed: number) {
+    runMotor(MotorChannel.M1, MotorDirection.Backward, speed)
+    runMotor(MotorChannel.M2, MotorDirection.Backward, speed)
+}
+
+//% block="turn left at speed %speed"
+//% speed.min=0 speed.max=255
+export function turnLeft(speed: number) {
+    runMotor(MotorChannel.M1, MotorDirection.Backward, speed)
+    runMotor(MotorChannel.M2, MotorDirection.Forward, speed)
+}
+
+//% block="turn right at speed %speed"
+//% speed.min=0 speed.max=255
+export function turnRight(speed: number) {
+    runMotor(MotorChannel.M1, MotorDirection.Forward, speed)
+    runMotor(MotorChannel.M2, MotorDirection.Backward, speed)
+}
+
+//% block="stop motors"
+export function stopMotors() {
+    brakeMotor(MotorChannel.All)
+}
 
 }
