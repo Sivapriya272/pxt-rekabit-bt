@@ -13,7 +13,6 @@
         "main.ts",
         "power.ts",
         "motor.ts",
-        "rgb.ts",
     ],
     "testFiles": [
         "test.ts"
