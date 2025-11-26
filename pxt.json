@@ -8,10 +8,12 @@
         "microphone": "*",
     },
     "files": [
-         "main.ts",
+        "README.md",
+        "main.blocks",
+        "main.ts",
         "power.ts",
         "motor.ts",
-        "servo.ts"
+        "rgb.ts",
     ],
     "testFiles": [
         "test.ts"
